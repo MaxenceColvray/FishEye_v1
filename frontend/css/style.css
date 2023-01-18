@@ -1,3 +1,149 @@
+@font-face {
+  font-family: Forma;
+  src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRDeck-Medium-Testing.ttf");
+}
+@font-face {
+  font-family: Forma-Light;
+  src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRBanner-Light-Testing.ttf");
+}
+header {
+  background-color: black;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 34px;
+  margin-right: 35px;
+}
 
+#discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/image.jpg");
+  background-repeat: repeat;
+  background-color: rgba(204, 204, 204, 0.8);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+#description {
+  background-color: black;
+}
+
+footer #content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 33px;
+  margin-right: 32px;
+}
+
+header nav figure img {
+  height: 48px;
+  width: 58px;
+}
+header nav button {
+  border-radius: 12px;
+  width: 163px;
+  height: 23px;
+  align-self: center;
+}
+header nav button strong {
+  font-family: Forma;
+  font-size: 14px;
+}
+
+#arrow {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+#arrow figure img {
+  width: 41px;
+  height: 24px;
+}
+
+#discover p {
+  font-family: Forma-Light;
+  color: white;
+  font-size: 23px;
+}
+#discover img {
+  width: 361px;
+  height: 96px;
+}
+
+#description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#description img {
+  width: 28px;
+  height: 32px;
+}
+#description button {
+  background-color: black;
+  border-radius: 24px;
+  width: 189px;
+  height: 34px;
+  border: 1px solid white;
+}
+#description button strong {
+  color: white;
+  font-family: Forma;
+}
+#description #description-text {
+  color: white;
+  font-family: Forma;
+  font-size: 17px;
+}
+#description #description-text .pink-text {
+  color: #DA0073;
+  font-family: Forma;
+  display: inline;
+}
+#description #description-text p {
+  display: inline;
+}
+#description #description-text #challenge {
+  font-size: 35px;
+  letter-spacing: 0.35px;
+}
+#description #description-text figure #firstarrow {
+  transform: rotate(90deg);
+  width: 27px;
+  height: 32px;
+  justify-self: flex-start;
+}
+#description #description-text figure img {
+  transform: rotate(90deg);
+  width: 27px;
+  height: 32px;
+  align-self: end;
+}
+#description #description-text .black-challenge {
+  color: black;
+  -webkit-text-stroke: 0.01px white;
+  font-size: 35px;
+  letter-spacing: 0.35px;
+}
+
+footer {
+  font-family: Forma;
+}
+footer p {
+  text-align: center;
+}
+footer #content #networks #img {
+  display: flex;
+  justify-content: center;
+}
+footer #content #networks #img img {
+  height: 37px;
+  width: 37px;
+}
 
 /*# sourceMappingURL=style.css.map */
