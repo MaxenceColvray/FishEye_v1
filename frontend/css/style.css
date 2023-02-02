@@ -3,56 +3,136 @@
   src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRDeck-Medium-Testing.ttf");
 }
 @font-face {
+  font-family: Forma-Regular;
+  src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRText-Regular-Testing.ttf");
+}
+@font-face {
   font-family: Forma-Light;
   src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRBanner-Light-Testing.ttf");
 }
+@font-face {
+  font-family: Forma-Extra-Bold;
+  src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRDeck-ExtraBold-Testing.ttf");
+}
+@font-face {
+  font-family: Forma-Bold;
+  src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRDeck-Bold-Testing.ttf");
+}
 header {
+  top: 0;
   background-color: black;
+  position: sticky;
   width: 100%;
 }
 header nav {
+  padding-top: 1%;
+  padding-bottom: 1%;
   display: flex;
   justify-content: space-between;
-  margin-left: 34px;
+  align-items: center;
+  margin-left: 3%;
   margin-right: 35px;
+}
+
+#white-header {
+  top: 0;
+  position: sticky;
+  background-color: white;
+  width: 100%;
 }
 
 #discover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/image.jpg");
+  background-image: url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/ordi.png");
   background-repeat: repeat;
   background-color: rgba(204, 204, 204, 0.8);
   background-position: center;
   background-size: cover;
   width: 100%;
 }
+@media only screen and (max-width: 700px) {
+  #discover {
+    background-image: url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/portable.png");
+  }
+}
 
 #description {
   background-color: black;
 }
 
+#list {
+  background-color: black;
+  display: flex;
+}
+#list #image {
+  background-color: black;
+}
+
+#contact-us {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mentions {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#politique {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+}
 footer #content {
   display: flex;
-  justify-content: space-between;
-  margin-left: 33px;
-  margin-right: 32px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#black-footer {
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+#black-footer a {
+  color: white;
 }
 
 header nav figure img {
-  height: 48px;
-  width: 58px;
+  height: 56px;
+  width: 64px;
+  filter: drop-shadow(0 0 0.15rem #DA0073);
 }
 header nav button {
-  border-radius: 12px;
-  width: 163px;
-  height: 23px;
+  width: 214px;
+  height: 32px;
+  border-radius: 32px;
   align-self: center;
+  padding: 3px 30px 3px 30px;
 }
 header nav button strong {
   font-family: Forma;
-  font-size: 14px;
+  font-size: 16px;
+}
+header nav button:hover {
+  background-color: #DA0073;
+  color: white;
+  height: 45px;
+  transition-duration: 1s;
+  cursor: pointer;
 }
 
 #arrow {
@@ -68,11 +148,11 @@ header nav button strong {
 #discover p {
   font-family: Forma-Light;
   color: white;
-  font-size: 23px;
+  font-size: 30px;
 }
 #discover img {
-  width: 361px;
-  height: 96px;
+  width: 427px;
+  height: 228px;
 }
 
 #description {
@@ -80,27 +160,41 @@ header nav button strong {
   flex-direction: column;
   align-items: center;
 }
+#description h1 {
+  font-size: 60px;
+}
 #description img {
-  width: 28px;
-  height: 32px;
+  width: 37px;
+  height: 44px;
 }
 #description button {
   background-color: black;
-  border-radius: 24px;
-  width: 189px;
-  height: 34px;
-  border: 1px solid white;
+  border-radius: 32px;
+  width: 213px;
+  height: 32px;
+  border: 2px solid white;
 }
 #description button strong {
   color: white;
   font-family: Forma;
 }
+#description button:hover {
+  border: 1px solid #DA0073;
+  cursor: pointer;
+}
 #description #description-text {
   color: white;
   font-family: Forma;
-  font-size: 17px;
+  font-size: 30px;
+}
+#description #description-text #smaller-text {
+  font-size: 20px;
+}
+#description #description-text #smaller-text strong {
+  color: #DA0073;
 }
 #description #description-text .pink-text {
+  font-size: 30px;
   color: #DA0073;
   font-family: Forma;
   display: inline;
@@ -109,41 +203,136 @@ header nav button strong {
   display: inline;
 }
 #description #description-text #challenge {
-  font-size: 35px;
+  font-size: 80px;
   letter-spacing: 0.35px;
+  margin-left: 10%;
 }
-#description #description-text figure #firstarrow {
+#description #description-text figure #first-arrow {
   transform: rotate(90deg);
-  width: 27px;
-  height: 32px;
-  justify-self: flex-start;
+  width: 53px;
+  height: 64px;
+  margin-bottom: -10%;
 }
-#description #description-text figure img {
+#description #description-text figure #double-arrow {
   transform: rotate(90deg);
-  width: 27px;
-  height: 32px;
-  align-self: end;
+  width: 53px;
+  height: 64px;
+  margin-left: 80%;
+  margin-top: -100%;
 }
 #description #description-text .black-challenge {
   color: black;
   -webkit-text-stroke: 0.01px white;
-  font-size: 35px;
+  font-size: 80px;
   letter-spacing: 0.35px;
+  margin-left: 10%;
+}
+
+#partners {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+#partners h1 {
+  font-family: Forma-Extra-Bold;
+  font-size: 80px;
+  color: white;
+  margin-left: 3%;
+}
+#partners strong {
+  font-family: Forma-Bold;
+  color: #DA0073;
+  margin-left: 3%;
+  font-size: 40px;
+}
+
+#contact-us {
+  font-family: Forma-Bold;
+}
+#contact-us img {
+  width: 37px;
+  height: 44px;
+}
+#contact-us strong {
+  color: white;
+  font-size: 30px;
+}
+#contact-us button {
+  background-color: black;
+  border-radius: 32px;
+  width: 213px;
+  height: 32px;
+  border: 2px solid white;
+}
+#contact-us button strong {
+  font-size: 15px;
+}
+#contact-us button:hover {
+  cursor: pointer;
+  border: 2px solid #DA0073;
+}
+
+#list #image {
+  margin-left: 2.5%;
+}
+#list #image img {
+  background-color: black;
+  width: 36px;
+  height: 60px;
+}
+#list #text {
+  margin-left: 5%;
+}
+#list #text p {
+  letter-spacing: 0.4px;
+  font-size: 20px;
+  color: white;
+  font-family: Forma;
+}
+
+#mentions h1 {
+  font-family: Forma-Extra-bold;
+  font-size: 80px;
+}
+#mentions .part {
+  font-size: 25px;
+  font-family: Forma;
+}
+#mentions .content {
+  font-size: 20px;
+  font-family: Forma-Regular;
+}
+
+#politique h1 {
+  font-family: Forma-Extra-bold;
+  font-size: 80px;
+}
+#politique .part {
+  font-size: 25px;
+  font-family: Forma;
+}
+#politique .content {
+  font-size: 20px;
+  font-family: Forma-Regular;
 }
 
 footer {
   font-family: Forma;
+  font-size: 20px;
 }
 footer p {
   text-align: center;
 }
+footer p a {
+  text-decoration: none;
+  color: black;
+}
 footer #content #networks #img {
   display: flex;
-  justify-content: center;
 }
 footer #content #networks #img img {
-  height: 37px;
-  width: 37px;
+  height: 47px;
+  width: 47px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,21 +2,31 @@ header {
     nav {
         figure {
             img {
-                height: 48px;
-                width: 58px;
+                height: 56px;
+                width: 64px;
+                filter: drop-shadow(0 0 0.15rem #DA0073)
             }
         }
 
         button {
-            border-radius: 12px;
-            width: 163px;
-            height: 23px;
+            width: 214px;
+            height: 32px;
+            border-radius: 32px;
             align-self: center;
+            padding: 3px 30px 3px 30px;
 
             strong {
                 font-family: Forma;
-                font-size: 14px;
+                font-size: 16px;
             }
+        }
+
+        button:hover {
+            background-color: #DA0073;
+            color: white;
+            height: 45px;
+            transition-duration: 1s;
+            cursor: pointer;
         }
     }
 }
@@ -35,15 +45,16 @@ header {
 }
 
 #discover {
+
     p {
         font-family: Forma-Light;
         color: white;
-        font-size: 23px;
+        font-size: 30px;
     }
 
     img {
-        width: 361px;
-        height: 96px;
+        width: 427px;
+        height: 228px;
     }
 }
 
@@ -52,17 +63,21 @@ header {
     flex-direction: column;
     align-items: center;
 
+    h1 {
+        font-size: 60px;
+    }
+
     img {
-        width: 28px;
-        height: 32px;
+        width: 37px;
+        height: 44px;
     }
 
     button {
         background-color: black;
-        border-radius: 24px;
-        width: 189px;
-        height: 34px;
-        border: 1px solid white;
+        border-radius: 32px;
+        width: 213px;
+        height: 32px;
+        border: 2px solid white;
 
         strong {
             color: white;
@@ -71,12 +86,26 @@ header {
 
     }
 
+    button:hover {
+        border: 1px solid #DA0073;
+        cursor: pointer;
+    }
+
     #description-text {
         color: white;
         font-family: Forma;
-        font-size: 17px;
+        font-size: 30px;
+
+        #smaller-text {
+            font-size: 20px;
+
+            strong {
+                color: #DA0073;
+            }
+        }
 
         .pink-text {
+            font-size: 30px;
             color: #DA0073;
             font-family: Forma;
             display: inline;
@@ -87,51 +116,172 @@ header {
         }
 
         #challenge {
-            font-size: 35px;
+            font-size: 80px;
             letter-spacing: 0.35px;
+            margin-left: 10%;
         }
 
         figure {
-            #firstarrow {
+            #first-arrow {
                 transform: rotate(90deg);
-                width: 27px;
-                height: 32px;
-                justify-self: flex-start;
+                width: 53px;
+                height: 64px;
+                margin-bottom: -10%;
             }
 
-            img {
+
+            #double-arrow {
                 transform: rotate(90deg);
-                width: 27px;
-                height: 32px;
-                align-self: end;
+                width: 53px;
+                height: 64px;
+                margin-left: 80%;
+                margin-top: -100%;
             }
         }
 
         .black-challenge {
             color: black;
             -webkit-text-stroke: 0.01px white;
-            font-size: 35px;
+            font-size: 80px;
             letter-spacing: 0.35px;
+            margin-left: 10%;
         }
+    }
+}
+
+#partners {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-family: Forma-Extra-Bold;
+        font-size: 80px;
+        color: white;
+        margin-left: 3%;
+    }
+
+    strong {
+        font-family: Forma-Bold;
+        color: #DA0073;
+        margin-left: 3%;
+        font-size: 40px;
+    }
+}
+
+#contact-us {
+    font-family: Forma-Bold;
+
+    img {
+        width: 37px;
+        height: 44px;
+    }
+
+    strong {
+        color: white;
+        font-size: 30px;
+    }
+
+    button {
+        background-color: black;
+        border-radius: 32px;
+        width: 213px;
+        height: 32px;
+        border: 2px solid white;
+
+        strong {
+            font-size: 15px;
+        }
+    }
+
+    button:hover {
+        cursor: pointer;
+        border: 2px solid #DA0073;
+    }
+}
+
+#list {
+
+    #image {
+        margin-left: 2.5%;
+
+        img {
+            background-color: black;
+            width: 36px;
+            height: 60px;
+        }
+    }
+
+    #text {
+        margin-left: 5%;
+
+        p {
+            letter-spacing: 0.4px;
+            font-size: 20px;
+            color: white;
+            font-family: Forma;
+        }
+    }
+}
+
+#mentions {
+
+    h1 {
+        font-family: Forma-Extra-bold;
+        font-size: 80px;
+    }
+
+    .part {
+        font-size: 25px;
+        font-family: Forma;
+    }
+
+    .content {
+        font-size: 20px;
+        font-family: Forma-Regular;
+    }
+}
+
+#politique {
+
+    h1 {
+        font-family: Forma-Extra-bold;
+        font-size: 80px;
+    }
+
+    .part {
+        font-size: 25px;
+        font-family: Forma;
+    }
+
+    .content {
+        font-size: 20px;
+        font-family: Forma-Regular;
     }
 }
 
 footer {
     font-family: Forma;
+    font-size: 20px;
 
     p {
         text-align: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
     }
 
     #content {
+
         #networks {
             #img {
                 display: flex;
-                justify-content: center;
 
                 img {
-                    height: 37px;
-                    width: 37px;
+                    height: 47px;
+                    width: 47px;
                 }
             }
         }

@@ -1,8 +1,23 @@
 footer {
+    bottom: 0;
+    width: 100%;
+
     #content {
         display: flex;
-        justify-content: space-between;
-        margin-left: 33px;
-        margin-right: 32px;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+
+#black-footer {
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    a {
+        color: white;
     }
 }

@@ -3,14 +3,49 @@
     flex-direction: column;
     align-items: center;
     background-image:
-        url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/image.jpg");
+        url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/ordi.png");
     background-repeat: repeat;
     background-color: #cccc;
     background-position: center;
     background-size: cover;
     width: 100%;
+
+    @media only screen and (max-width:700px) {
+        background-image:
+            url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/portable.png");
+    }
 }
 
 #description {
     background-color: black;
+}
+
+#list {
+    background-color: black;
+    display: flex;
+
+    #image {
+        background-color: black;
+    }
+}
+
+#contact-us {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mentions {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#politique {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
 }
