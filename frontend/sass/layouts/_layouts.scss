@@ -1,51 +1,78 @@
-#discover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image:
-        url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/ordi.png");
-    background-repeat: repeat;
-    background-color: #cccc;
-    background-position: center;
+.banner{
+    height: 330px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/assets/ordi.png);
     background-size: cover;
-    width: 100%;
-
-    @media only screen and (max-width:700px) {
-        background-image:
-            url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/portable.png");
-    }
-}
-
-#description {
-    background-color: black;
-}
-
-#list {
-    background-color: black;
+    background-position: center;
     display: flex;
-
-    #image {
-        background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        color: $font-white;
+        margin-top: 35px;
+        font-size: 22px;
+        font-weight: $font-regular;
+        font-weight: $font-thin;
     }
+    .logo_principal{
+        width: 94%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .fleche{
+        width: 50px;
+        position: relative;
+        top: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
 }
 
-#contact-us {
-    background-color: black;
+.description{
+    background-color: $bg-black;
+    padding: 40px 10px ; 
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#mentions {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#politique {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
+    h1{
+        color: $font-white;
+        font-weight: $font-bold;
+    }
+    p{
+        color: $font-white;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    h3{
+        font-size: 35px;
+        -webkit-text-stroke: 0.4px white;
+        color: transparent;
+        margin: 10px;
+        
+    }
+    .white{
+        color: $font-white;
+    }
+    .double_fleche{
+        width: 20px;
+        img{
+            width: 100%;
+        }
+    }
+    a{
+        margin-top: 25px;
+        font-size: 16px;
+        font-weight: $font-bold;
+        background-color: transparent;
+        padding: 7px 20px;
+        border-radius: 100px;
+        color: $font-white;
+        border: solid 1.5px $font-white;
+    }
 }

@@ -1,338 +1,132 @@
-@font-face {
-  font-family: Forma;
-  src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRDeck-Medium-Testing.ttf");
+/********* Start font *********/
+/********* End font *********/
+/********* Start background *********/
+/********* End background *********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  font-family: "roboto", Helvetica, sans-serif;
+  font-size: 700;
+  box-sizing: border-box;
+  font-weight: 400;
 }
-@font-face {
-  font-family: Forma-Regular;
-  src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRText-Regular-Testing.ttf");
+
+a {
+  text-decoration: none;
 }
-@font-face {
-  font-family: Forma-Light;
-  src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRBanner-Light-Testing.ttf");
+
+h1, h2 {
+  margin: 0;
 }
-@font-face {
-  font-family: Forma-Extra-Bold;
-  src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRDeck-ExtraBold-Testing.ttf");
+
+strong {
+  color: #DA0073;
 }
-@font-face {
-  font-family: Forma-Bold;
-  src: url("C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRDeck-Bold-Testing.ttf");
+
+p {
+  font-size: 14px;
 }
+
 header {
-  top: 0;
-  background-color: black;
-  position: sticky;
-  width: 100%;
-}
-header nav {
-  padding-top: 1%;
-  padding-bottom: 1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 3%;
-  margin-right: 35px;
+  padding: 10px 20px 10px 20px;
+  background-color: #0F0F0F;
 }
-
-#white-header {
-  top: 0;
-  position: sticky;
+header figure {
+  width: 60px;
+}
+header figure img {
+  width: 100%;
+  height: 100%;
+}
+header a {
+  font-size: 13px;
   background-color: white;
-  width: 100%;
+  padding: 5px 15px;
+  border-radius: 100px;
+  color: #171717;
 }
-
-#discover {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/ordi.png");
-  background-repeat: repeat;
-  background-color: rgba(204, 204, 204, 0.8);
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-}
-@media only screen and (max-width: 700px) {
-  #discover {
-    background-image: url("C:/Users/lilia/Desktop/fishEye_v1/frontend/assets/portable.png");
-  }
-}
-
-#description {
-  background-color: black;
-}
-
-#list {
-  background-color: black;
-  display: flex;
-}
-#list #image {
-  background-color: black;
-}
-
-#contact-us {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#mentions {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-#politique {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-footer {
-  bottom: 0;
-  width: 100%;
-}
-footer #content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#black-footer {
-  bottom: 0;
-  width: 100%;
-  background-color: black;
+header a:active, header a:hover {
   color: white;
-}
-#black-footer a {
-  color: white;
-}
-
-header nav figure img {
-  height: 56px;
-  width: 64px;
-  filter: drop-shadow(0 0 0.15rem #DA0073);
-}
-header nav button {
-  width: 214px;
-  height: 32px;
-  border-radius: 32px;
-  align-self: center;
-  padding: 3px 30px 3px 30px;
-}
-header nav button strong {
-  font-family: Forma;
-  font-size: 16px;
-}
-header nav button:hover {
   background-color: #DA0073;
-  color: white;
-  height: 45px;
-  transition-duration: 1s;
-  cursor: pointer;
 }
 
-#arrow {
-  background-color: black;
+.banner {
+  height: 330px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/ordi.png);
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-#arrow figure img {
-  width: 41px;
-  height: 24px;
-}
-
-#discover p {
-  font-family: Forma-Light;
+.banner h2 {
   color: white;
-  font-size: 30px;
+  margin-top: 35px;
+  font-size: 22px;
+  font-weight: 400;
+  font-weight: 100;
 }
-#discover img {
-  width: 427px;
-  height: 228px;
+.banner .logo_principal {
+  width: 94%;
+}
+.banner .logo_principal img {
+  width: 100%;
+  height: 100%;
+}
+.banner .fleche {
+  width: 50px;
+  position: relative;
+  top: 20px;
+}
+.banner .fleche img {
+  width: 100%;
+  height: 100%;
 }
 
-#description {
+.description {
+  background-color: #0F0F0F;
+  padding: 40px 10px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#description h1 {
-  font-size: 60px;
-}
-#description img {
-  width: 37px;
-  height: 44px;
-}
-#description button {
-  background-color: black;
-  border-radius: 32px;
-  width: 213px;
-  height: 32px;
-  border: 2px solid white;
-}
-#description button strong {
+.description h1 {
   color: white;
-  font-family: Forma;
+  font-weight: 700;
 }
-#description button:hover {
-  border: 1px solid #DA0073;
-  cursor: pointer;
-}
-#description #description-text {
+.description p {
   color: white;
-  font-family: Forma;
-  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-#description #description-text #smaller-text {
-  font-size: 20px;
+.description h3 {
+  font-size: 35px;
+  -webkit-text-stroke: 0.4px white;
+  color: transparent;
+  margin: 10px;
 }
-#description #description-text #smaller-text strong {
-  color: #DA0073;
-}
-#description #description-text .pink-text {
-  font-size: 30px;
-  color: #DA0073;
-  font-family: Forma;
-  display: inline;
-}
-#description #description-text p {
-  display: inline;
-}
-#description #description-text #challenge {
-  font-size: 80px;
-  letter-spacing: 0.35px;
-  margin-left: 10%;
-}
-#description #description-text figure #first-arrow {
-  transform: rotate(90deg);
-  width: 53px;
-  height: 64px;
-  margin-bottom: -10%;
-}
-#description #description-text figure #double-arrow {
-  transform: rotate(90deg);
-  width: 53px;
-  height: 64px;
-  margin-left: 80%;
-  margin-top: -100%;
-}
-#description #description-text .black-challenge {
-  color: black;
-  -webkit-text-stroke: 0.01px white;
-  font-size: 80px;
-  letter-spacing: 0.35px;
-  margin-left: 10%;
-}
-
-#partners {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-}
-#partners h1 {
-  font-family: Forma-Extra-Bold;
-  font-size: 80px;
+.description .white {
   color: white;
-  margin-left: 3%;
 }
-#partners strong {
-  font-family: Forma-Bold;
-  color: #DA0073;
-  margin-left: 3%;
-  font-size: 40px;
+.description .double_fleche {
+  width: 20px;
 }
-
-#contact-us {
-  font-family: Forma-Bold;
+.description .double_fleche img {
+  width: 100%;
 }
-#contact-us img {
-  width: 37px;
-  height: 44px;
-}
-#contact-us strong {
+.description a {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 7px 20px;
+  border-radius: 100px;
   color: white;
-  font-size: 30px;
-}
-#contact-us button {
-  background-color: black;
-  border-radius: 32px;
-  width: 213px;
-  height: 32px;
-  border: 2px solid white;
-}
-#contact-us button strong {
-  font-size: 15px;
-}
-#contact-us button:hover {
-  cursor: pointer;
-  border: 2px solid #DA0073;
-}
-
-#list #image {
-  margin-left: 2.5%;
-}
-#list #image img {
-  background-color: black;
-  width: 36px;
-  height: 60px;
-}
-#list #text {
-  margin-left: 5%;
-}
-#list #text p {
-  letter-spacing: 0.4px;
-  font-size: 20px;
-  color: white;
-  font-family: Forma;
-}
-
-#mentions h1 {
-  font-family: Forma-Extra-bold;
-  font-size: 80px;
-}
-#mentions .part {
-  font-size: 25px;
-  font-family: Forma;
-}
-#mentions .content {
-  font-size: 20px;
-  font-family: Forma-Regular;
-}
-
-#politique h1 {
-  font-family: Forma-Extra-bold;
-  font-size: 80px;
-}
-#politique .part {
-  font-size: 25px;
-  font-family: Forma;
-}
-#politique .content {
-  font-size: 20px;
-  font-family: Forma-Regular;
-}
-
-footer {
-  font-family: Forma;
-  font-size: 20px;
-}
-footer p {
-  text-align: center;
-}
-footer p a {
-  text-decoration: none;
-  color: black;
-}
-footer #content #networks #img {
-  display: flex;
-}
-footer #content #networks #img img {
-  height: 47px;
-  width: 47px;
+  border: solid 1.5px white;
 }
 
 /*# sourceMappingURL=style.css.map */

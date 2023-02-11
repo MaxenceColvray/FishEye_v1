@@ -1,24 +1,22 @@
-@font-face {
-    font-family: Forma;
-    src: url('C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRDeck-Medium-Testing.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    font-family: $font-primary;
+    font-size: $font-bold;
+    box-sizing: border-box;
+    font-weight: $font-regular;
 }
 
-@font-face {
-    font-family: Forma-Regular;
-    src: url('C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRText-Regular-Testing.ttf');
+a{
+    text-decoration: none;
 }
 
-@font-face {
-    font-family: Forma-Light;
-    src: url('C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRBanner-Light-Testing.ttf');
+h1, h2{
+    margin: 0;
 }
-
-@font-face {
-    font-family: Forma-Extra-Bold;
-    src: url('C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRDeck-ExtraBold-Testing.ttf');
+strong{
+    color: $font-distinct;
 }
-
-@font-face {
-    font-family: Forma-Bold;
-    src: url('C:/Users/lilia/Downloads/forma-djr-banner-cufonfonts/FormaDJRDeck-Bold-Testing.ttf');
+p{
+    font-size: 14px;
 }
