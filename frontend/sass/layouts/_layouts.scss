@@ -1,5 +1,6 @@
 .banner{
-    height: 330px;
+    padding: 10px 15px;
+    height: 280px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/assets/ordi.png);
     background-size: cover;
     background-position: center;
@@ -11,20 +12,19 @@
         color: $font-white;
         margin-top: 35px;
         font-size: 22px;
-        font-weight: $font-regular;
-        font-weight: $font-thin;
     }
     .logo_principal{
-        width: 94%;
+        width: 100%;
+        max-width: 600px;
         img{
             width: 100%;
             height: 100%;
         }
     }
     .fleche{
-        width: 50px;
+        width: 45px;
         position: relative;
-        top: 20px;
+        top: 25px;
         img{
             width: 100%;
             height: 100%;
@@ -35,6 +35,8 @@
 
 .description{
     background-color: $bg-black;
+    max-width: 600px;
+    margin: auto;
     padding: 40px 10px ; 
     text-align: center;
     display: flex;
@@ -46,20 +48,44 @@
     }
     p{
         color: $font-white;
-        margin-top: 30px;
-        margin-bottom: 30px;
     }
-    h3{
-        font-size: 35px;
-        -webkit-text-stroke: 0.4px white;
-        color: transparent;
-        margin: 10px;
-        
+    &__box{
+        display: flex;
+        margin: 20px auto;
+        .top_fleche_bas{
+            width: 30px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }  
+        &__challenge{
+            h3{
+                font-size: 30px;
+                -webkit-text-stroke: 0.4px white;
+                color: transparent;
+            }
+            .white{
+                color: $font-white;
+            }
+        }
+        .bottom_fleche_bas{
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
     }
-    .white{
-        color: $font-white;
+    .question{
+        font-size: 15px;
+        font-weight: $font-medium;
     }
     .double_fleche{
+        margin-top: 20px;
         width: 20px;
         img{
             width: 100%;

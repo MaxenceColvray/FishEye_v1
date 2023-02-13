@@ -4,19 +4,41 @@ body{
     font-family: $font-primary;
     font-size: $font-bold;
     box-sizing: border-box;
-    font-weight: $font-regular;
+}
+.bg_black{
+    background-color: $bg-black;
+}
+
+header{
+    max-width: 1300px;
 }
 
 a{
     text-decoration: none;
 }
 
-h1, h2{
+h1{
     margin: 0;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: $font-light;
+}
+
+h3{
+    margin: 4px 10px;
+}
+
+h4{
+    color: white;
 }
 strong{
     color: $font-distinct;
 }
 p{
     font-size: 14px;
+    font-weight: $font-light;
 }

@@ -7,15 +7,37 @@ body {
   font-family: "roboto", Helvetica, sans-serif;
   font-size: 700;
   box-sizing: border-box;
-  font-weight: 400;
+}
+
+.bg_black {
+  background-color: #0F0F0F;
+}
+
+header {
+  max-width: 1300px;
 }
 
 a {
   text-decoration: none;
 }
 
-h1, h2 {
+h1 {
   margin: 0;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+h3 {
+  margin: 4px 10px;
+}
+
+h4 {
+  color: white;
 }
 
 strong {
@@ -24,6 +46,7 @@ strong {
 
 p {
   font-size: 14px;
+  font-weight: 300;
 }
 
 header {
@@ -31,7 +54,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 10px 20px;
-  background-color: #0F0F0F;
+  margin: auto;
 }
 header figure {
   width: 60px;
@@ -47,13 +70,15 @@ header a {
   border-radius: 100px;
   color: #171717;
 }
-header a:active, header a:hover {
+header a:active,
+header a:hover {
   color: white;
   background-color: #DA0073;
 }
 
 .banner {
-  height: 330px;
+  padding: 10px 15px;
+  height: 280px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/ordi.png);
   background-size: cover;
   background-position: center;
@@ -66,20 +91,19 @@ header a:active, header a:hover {
   color: white;
   margin-top: 35px;
   font-size: 22px;
-  font-weight: 400;
-  font-weight: 100;
 }
 .banner .logo_principal {
-  width: 94%;
+  width: 100%;
+  max-width: 600px;
 }
 .banner .logo_principal img {
   width: 100%;
   height: 100%;
 }
 .banner .fleche {
-  width: 50px;
+  width: 45px;
   position: relative;
-  top: 20px;
+  top: 25px;
 }
 .banner .fleche img {
   width: 100%;
@@ -88,6 +112,8 @@ header a:active, header a:hover {
 
 .description {
   background-color: #0F0F0F;
+  max-width: 600px;
+  margin: auto;
   padding: 40px 10px;
   text-align: center;
   display: flex;
@@ -100,19 +126,42 @@ header a:active, header a:hover {
 }
 .description p {
   color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
-.description h3 {
-  font-size: 35px;
+.description__box {
+  display: flex;
+  margin: 20px auto;
+}
+.description__box .top_fleche_bas {
+  width: 30px;
+}
+.description__box .top_fleche_bas img {
+  width: 100%;
+  object-fit: cover;
+}
+.description__box__challenge h3 {
+  font-size: 30px;
   -webkit-text-stroke: 0.4px white;
   color: transparent;
-  margin: 10px;
 }
-.description .white {
+.description__box__challenge .white {
   color: white;
 }
+.description__box .bottom_fleche_bas {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.description__box .bottom_fleche_bas img {
+  width: 100%;
+  object-fit: cover;
+}
+.description .question {
+  font-size: 15px;
+  font-weight: 500;
+}
 .description .double_fleche {
+  margin-top: 20px;
   width: 20px;
 }
 .description .double_fleche img {
@@ -127,6 +176,45 @@ header a:active, header a:hover {
   border-radius: 100px;
   color: white;
   border: solid 1.5px white;
+}
+
+footer {
+  background-color: white;
+}
+footer .footer__box {
+  padding: 8px;
+  max-width: 800px;
+  margin: auto;
+}
+footer .footer__box__info {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer__box__info .title {
+  font-weight: 500;
+}
+footer .footer__box__info p {
+  font-size: 11px;
+}
+footer .footer__box__info__social_network__logo {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer__box__info__social_network__logo figure {
+  width: 20px;
+}
+footer .footer__box__info__social_network__logo figure img {
+  width: 100%;
+  object-fit: cover;
+}
+footer .footer__box__droit p {
+  text-align: center;
+  font-size: 12px;
+  margin: 5px;
+}
+footer .footer__box__droit p a {
+  font-weight: 700;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
