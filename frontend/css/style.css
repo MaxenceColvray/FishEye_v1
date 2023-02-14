@@ -262,6 +262,10 @@ header .box_header nav a:hover {
   .banner {
     height: 450px;
   }
+  .banner h2 {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
   .banner .logo_principal {
     max-width: 600px;
   }

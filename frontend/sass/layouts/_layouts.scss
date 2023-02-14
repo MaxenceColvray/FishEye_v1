@@ -145,6 +145,10 @@
 @media (min-width: 700px) {
   .banner {
     height: 450px;
+    h2{
+      font-size: 35px;
+      margin-bottom: 5px;
+    }
     .logo_principal {
       max-width: 600px;
     }
