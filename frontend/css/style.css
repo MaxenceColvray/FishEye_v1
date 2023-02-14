@@ -13,12 +13,17 @@ body {
   background-color: #0F0F0F;
 }
 
-header {
-  max-width: 1300px;
+.color_white {
+  color: white;
+}
+
+header, .description, .legal_text, .footer__box {
+  max-width: 700px;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1 {
@@ -49,6 +54,17 @@ p {
   font-weight: 300;
 }
 
+@media (min-width: 700px) {
+  h1 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -57,25 +73,33 @@ header {
   margin: auto;
 }
 header figure {
-  width: 60px;
+  width: 45px;
 }
-header figure img {
+header figure a img {
   width: 100%;
   height: 100%;
 }
-header a {
+header nav a {
   font-size: 13px;
   background-color: white;
-  padding: 5px 15px;
+  padding: 6px 13px;
   border-radius: 100px;
   color: #171717;
 }
-header a:active,
-header a:hover {
+header nav a:active,
+header nav a:hover {
   color: white;
   background-color: #DA0073;
 }
 
+@media (min-width: 700px) {
+  header figure {
+    width: 60px;
+  }
+  header nav a {
+    font-size: 15px;
+  }
+}
 .banner {
   padding: 10px 15px;
   height: 280px;
@@ -111,8 +135,6 @@ header a:hover {
 }
 
 .description {
-  background-color: #0F0F0F;
-  max-width: 600px;
   margin: auto;
   padding: 40px 10px;
   text-align: center;
@@ -168,23 +190,60 @@ header a:hover {
   width: 100%;
 }
 .description a {
-  margin-top: 25px;
+  margin-top: 30px;
   font-size: 16px;
   font-weight: 700;
   background-color: transparent;
-  padding: 7px 20px;
+  padding: 9px 18px;
   border-radius: 100px;
   color: white;
   border: solid 1.5px white;
 }
+.description a:active,
+.description a:hover {
+  border: solid 1.5px #DA0073;
+}
 
+.legal_text {
+  margin: auto;
+  padding: 20px;
+  color: #171717;
+}
+.legal_text h1 {
+  font-weight: 900;
+  line-height: 35px;
+}
+.legal_text h2 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.legal_text p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@media (min-width: 700px) {
+  .description .question {
+    font-size: 18px;
+  }
+  .description__box .top_fleche_bas, .description__box .bottom_fleche_bas {
+    width: 40px;
+  }
+  .description__box__challenge h3 {
+    font-size: 43px;
+  }
+}
 footer {
   background-color: white;
 }
 footer .footer__box {
   padding: 8px;
-  max-width: 800px;
   margin: auto;
+}
+footer .footer__box p {
+  font-size: 11px;
 }
 footer .footer__box__info {
   display: flex;
@@ -193,27 +252,38 @@ footer .footer__box__info {
 footer .footer__box__info .title {
   font-weight: 500;
 }
-footer .footer__box__info p {
-  font-size: 11px;
+footer .footer__box__info__social_network {
+  text-align: center;
 }
 footer .footer__box__info__social_network__logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-footer .footer__box__info__social_network__logo figure {
-  width: 20px;
+footer .footer__box__info__social_network__logo a i {
+  font-size: 27px;
 }
-footer .footer__box__info__social_network__logo figure img {
-  width: 100%;
+footer .footer__box__info__social_network__logo a i:hover, footer .footer__box__info__social_network__logo a i:active {
+  color: #DA0073;
 }
 footer .footer__box__droit p {
   text-align: center;
   font-size: 12px;
-  margin: 5px;
+  margin: 7px;
 }
 footer .footer__box__droit p a {
-  font-weight: 700;
-  color: black;
+  font-weight: 500;
+}
+
+@media (min-width: 700px) {
+  footer .footer__box__info p {
+    font-size: 14px;
+  }
+  footer .footer__box__info__social_network__logo a i {
+    font-size: 35px;
+  }
+  footer .footer__box__droit p {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

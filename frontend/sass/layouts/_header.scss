@@ -3,24 +3,41 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 10px 20px;
-  margin:auto;
+  margin: auto;
   figure {
-    width: 60px;
-    img {
-      width: 100%;
-      height: 100%;
+    width: 45px;
+    a {
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
-  a {
-    font-size: 13px;
-    background-color: $bg-white;
-    padding: 5px 15px;
-    border-radius: 100px;
-    color: $font-light-black;
+  nav {
+    a {
+      font-size: 13px;
+      background-color: $bg-white;
+      padding: 6px 13px;
+      border-radius: 100px;
+      color: $font-light-black;
+    }
+    a:active,
+    a:hover {
+      color: $font-white;
+      background-color: $bg-distinct;
+    }
   }
-  a:active,
-  a:hover {
-    color: $font-white;
-    background-color: $bg-distinct;
+}
+
+@media (min-width: 700px) {
+  header {
+    figure {
+      width: 60px;
+    }
+    nav {
+      a {
+        font-size: 15px;
+      }
+    }
   }
 }

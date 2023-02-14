@@ -1,44 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-body{
-    font-family: $font-primary;
-    font-size: $font-bold;
-    box-sizing: border-box;
-}
-.bg_black{
-    background-color: $bg-black;
+body {
+  font-family: $font-primary;
+  font-size: $font-bold;
+  box-sizing: border-box;
 }
 
-header{
-    max-width: 1300px;
+.bg_black {
+  background-color: $bg-black;
+}
+.color_white{
+  color: white;
 }
 
-a{
-    text-decoration: none;
+
+header, .description, .legal_text, .footer__box {
+  max-width: 700px;
 }
 
-h1{
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 35px;
+a {
+  text-decoration: none;
+  color: inherit;
+  //color: black;
 }
 
-h2{
-    font-size: 35px;
-    font-weight: $font-light;
+h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 35px;
 }
 
-h3{
-    margin: 4px 10px;
+h2 {
+  font-size: 35px;
+  font-weight: $font-light;
 }
 
-h4{
-    color: white;
+h3 {
+  margin: 4px 10px;
 }
-strong{
-    color: $font-distinct;
+
+h4 {
+  color: white;
 }
-p{
-    font-size: 14px;
-    font-weight: $font-light;
+strong {
+  color: $font-distinct;
+}
+p {
+  font-size: 14px;
+  font-weight: $font-light;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 42px;
+    }
+    h3 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 16px;
+      }
 }
