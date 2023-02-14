@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  font-family: $font-primary;
+  font-size: $font-bold;
+  box-sizing: border-box;
+}
+
+// composants //
+.bg_black {
+  background-color: $bg-black;
+}
+.color_white{
+  color: white;
+}
+.white_line{
+  border-bottom: solid 0px white;
+  max-width: 700px;
+  margin: auto;
+}
+.black_line{
+  border-bottom: solid 0px $font-light-black;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+
+.box_header, .description, .legal_text, .footer__box {
+  max-width: 700px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  //color: black;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: $font-light;
+}
+
+h3 {
+  margin: 4px 10px;
+}
+
+h4 {
+  color: white;
+}
+strong {
+  color: $font-distinct;
+}
+p {
+  font-size: 14px;
+  font-weight: $font-light;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 42px;
+    }
+    h3 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 16px;
+      }
+}
