@@ -260,11 +260,12 @@ header .box_header nav a:hover {
 
 @media (min-width: 700px) {
   .banner {
-    height: 450px;
+    height: 470px;
   }
   .banner h2 {
+    margin-top: 60px;
     font-size: 35px;
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
   .banner .logo_principal {
     max-width: 600px;
