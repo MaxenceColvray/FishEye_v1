@@ -322,6 +322,9 @@ header .box_header nav a:hover {
   .description__box__challenge h3 {
     font-size: 43px;
   }
+  .liste_raisons h1 {
+    margin-top: 50px;
+  }
 }
 footer {
   background-color: white;
