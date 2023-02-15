@@ -174,6 +174,43 @@
     transition-duration: 0.5s;
     border: solid 1.5px $font-distinct;
   }
+
+  @media (min-width: 700px) {
+    .question {
+      font-size: 30px;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+
+
+    p {
+      font-size: 20px;
+    }
+
+
+
+    .description__box {
+      .description__box__challenge {
+        h3 {
+          font-size: 92px;
+        }
+      }
+    }
+
+    .double_fleche {
+      margin-top: 20px;
+      width: 37px;
+      height: 44px;
+    }
+  }
+
+  figure {
+    width: 427px;
+    height: 64px;
+  }
 }
 
 .legal_text {

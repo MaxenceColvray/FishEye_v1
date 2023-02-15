@@ -275,6 +275,29 @@ header .box_header nav a:hover {
   transition-duration: 0.5s;
   border: solid 1.5px #DA0073;
 }
+@media (min-width: 700px) {
+  .description .question {
+    font-size: 30px;
+  }
+  .description h1 {
+    font-size: 60px;
+  }
+  .description p {
+    font-size: 20px;
+  }
+  .description .description__box .description__box__challenge h3 {
+    font-size: 92px;
+  }
+  .description .double_fleche {
+    margin-top: 20px;
+    width: 37px;
+    height: 44px;
+  }
+}
+.description figure {
+  width: 427px;
+  height: 64px;
+}
 
 .legal_text {
   margin: auto;
