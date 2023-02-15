@@ -25,9 +25,11 @@ body {
 }
 
 
-
-.box_header, .description, .legal_text, .footer__box {
+.description, .legal_text, .footer__box {
   max-width: 700px;
+}
+.box_header{
+  max-width: 1400px;
 }
 
 a {

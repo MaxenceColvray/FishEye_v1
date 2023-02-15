@@ -29,8 +29,12 @@ body {
   margin: auto;
 }
 
-.box_header, .description, .legal_text, .footer__box {
+.description, .legal_text, .footer__box {
   max-width: 700px;
+}
+
+.box_header {
+  max-width: 1400px;
 }
 
 a {
@@ -78,7 +82,7 @@ p {
   }
 }
 header {
-  padding: 10px 20px 10px 20px;
+  padding: 15px 25px 15px 25px;
 }
 header .box_header {
   display: flex;
@@ -87,7 +91,7 @@ header .box_header {
   margin: auto;
 }
 header .box_header figure {
-  width: 45px;
+  width: 60px;
 }
 header .box_header figure a img {
   width: 100%;
@@ -98,7 +102,7 @@ header .box_header nav a {
   background-color: white;
   padding: 6px 20px;
   border-radius: 100px;
-  font-weight: 500;
+  font-weight: 700;
   color: #171717;
 }
 header .box_header nav a:active,
@@ -110,11 +114,14 @@ header .box_header nav a:hover {
 }
 
 @media (min-width: 700px) {
+  header {
+    padding: 25px 55px;
+  }
   header .box_header figure {
-    width: 60px;
+    width: 80px;
   }
   header .box_header nav a {
-    font-size: 15px;
+    font-size: 18px;
   }
   .white_line {
     border-bottom: solid 0.7px white;
@@ -143,7 +150,7 @@ header .box_header nav a:hover {
 .banner h2 {
   color: white;
   margin-top: 35px;
-  font-size: 22px;
+  font-size: 25px;
 }
 .banner .logo_principal {
   width: 100%;
@@ -210,7 +217,7 @@ header .box_header nav a:hover {
 }
 .description h1 {
   color: white;
-  font-weight: 700;
+  font-weight: 900;
 }
 .description p {
   color: white;
@@ -302,15 +309,20 @@ header .box_header nav a:hover {
 
 @media (min-width: 700px) {
   .banner {
-    height: 470px;
+    height: 600px;
   }
   .banner h2 {
     margin-top: 60px;
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 0;
   }
   .banner .logo_principal {
-    max-width: 600px;
+    max-width: 700px;
+  }
+  .banner .fleche {
+    width: 85px;
+    position: relative;
+    top: 42px;
   }
   .description .question {
     font-size: 18px;
