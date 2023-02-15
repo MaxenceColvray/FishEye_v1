@@ -160,6 +160,46 @@ header .box_header nav a:hover {
   width: 100%;
   height: 100%;
 }
+.banner .fleche:hover {
+  color: #DA0073;
+}
+
+.liste_raisons {
+  max-width: 700px;
+  margin: auto;
+  padding: 0px 20px;
+}
+.liste_raisons h1 {
+  margin-top: 20px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 0;
+}
+.liste_raisons h2 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 900;
+  color: #DA0073;
+}
+.liste_raisons .box_raisons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+.liste_raisons .box_raisons .raison {
+  display: flex;
+  flex-direction: row;
+}
+.liste_raisons .box_raisons .raison figure img {
+  width: 25px;
+}
+.liste_raisons .box_raisons .raison p {
+  margin: 0;
+  padding-top: 12.5px;
+  margin-left: 20px;
+  color: white;
+}
 
 .description {
   margin: auto;
@@ -228,6 +268,9 @@ header .box_header nav a:hover {
 }
 .description a:active,
 .description a:hover {
+  background-color: white;
+  color: #171717;
+  transition-duration: 0.5s;
   border: solid 1.5px #DA0073;
 }
 
@@ -273,7 +316,8 @@ header .box_header nav a:hover {
   .description .question {
     font-size: 18px;
   }
-  .description__box .top_fleche_bas, .description__box .bottom_fleche_bas {
+  .description__box .top_fleche_bas,
+  .description__box .bottom_fleche_bas {
     width: 40px;
   }
   .description__box__challenge h3 {
@@ -302,12 +346,13 @@ footer .footer__box__info__social_network {
 }
 footer .footer__box__info__social_network__logo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 footer .footer__box__info__social_network__logo a i {
   font-size: 27px;
 }
-footer .footer__box__info__social_network__logo a i:hover, footer .footer__box__info__social_network__logo a i:active {
+footer .footer__box__info__social_network__logo a i:hover,
+footer .footer__box__info__social_network__logo a i:active {
   color: #DA0073;
 }
 footer .footer__box__droit p {

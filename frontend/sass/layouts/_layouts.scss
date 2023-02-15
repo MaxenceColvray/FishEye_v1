@@ -9,26 +9,80 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
   h2 {
     color: $font-white;
     margin-top: 35px;
     font-size: 22px;
   }
+
   .logo_principal {
     width: 100%;
     max-width: 600px;
+
     img {
       width: 100%;
       height: 100%;
     }
   }
+
   .fleche {
     width: 45px;
     position: relative;
     top: 25px;
+
     img {
       width: 100%;
       height: 100%;
+    }
+  }
+
+  .fleche:hover {
+    color: $font-distinct;
+  }
+}
+
+.liste_raisons {
+  max-width: 700px;
+  margin: auto;
+  padding: 0px 20px;
+
+  h1 {
+    margin-top: 20px;
+    font-weight: $font-extra-bold;
+    color: white;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: $font-extra-bold;
+    color: $font-distinct;
+  }
+
+  .box_raisons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+
+    .raison {
+      display: flex;
+      flex-direction: row;
+
+      figure {
+        img {
+          width: 25px;
+        }
+      }
+
+      p {
+        margin: 0;
+        padding-top: 12.5px;
+        margin-left: 20px;
+        color: white;
+      }
     }
   }
 }
@@ -40,55 +94,68 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h1 {
     color: $font-white;
     font-weight: $font-bold;
   }
+
   p {
     color: $font-white;
   }
+
   &__box {
     display: flex;
     margin: 20px auto;
+
     .top_fleche_bas {
       width: 30px;
+
       img {
         width: 100%;
         object-fit: cover;
       }
     }
+
     &__challenge {
       h3 {
         font-size: 30px;
         -webkit-text-stroke: 0.4px white;
         color: transparent;
       }
+
       .white {
         color: $font-white;
       }
     }
+
     .bottom_fleche_bas {
       width: 30px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+
       img {
         width: 100%;
         object-fit: cover;
       }
     }
   }
+
   .question {
     font-size: 15px;
     font-weight: $font-medium;
   }
+
   .double_fleche {
     margin-top: 20px;
     width: 20px;
+
     img {
       width: 100%;
     }
   }
+
   a {
     margin-top: 30px;
     font-size: 16px;
@@ -99,31 +166,39 @@
     color: $font-white;
     border: solid 1.5px $font-white;
   }
+
   a:active,
   a:hover {
+    background-color: white;
+    color: $font-light-black;
+    transition-duration: 0.5s;
     border: solid 1.5px $font-distinct;
   }
 }
 
-.legal_text{
+.legal_text {
   margin: auto;
   padding: 20px;
   color: #171717;
+
   h1 {
     font-weight: $font-extra-bold;
     line-height: 40px;
   }
+
   h2 {
     font-size: 18px;
     font-weight: $font-bold;
     letter-spacing: -1px;
   }
+
   h3 {
     margin: 0px 0 20px 0;
     font-size: 14px;
     font-weight: $font-bold;
     letter-spacing: -1px;
   }
+
   p {
     margin: 15px 0;
     font-size: 12px;
@@ -145,23 +220,30 @@
 @media (min-width: 700px) {
   .banner {
     height: 470px;
-    h2{
+
+    h2 {
       margin-top: 60px;
       font-size: 35px;
       margin-bottom: 0;
     }
+
     .logo_principal {
       max-width: 600px;
     }
   }
+
   .description {
     .question {
       font-size: 18px;
     }
+
     &__box {
-      .top_fleche_bas, .bottom_fleche_bas {
+
+      .top_fleche_bas,
+      .bottom_fleche_bas {
         width: 40px;
       }
+
       &__challenge {
         h3 {
           font-size: 43px;
@@ -170,5 +252,3 @@
     }
   }
 }
-
-
