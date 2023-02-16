@@ -17,24 +17,16 @@ body {
   color: white;
 }
 
-.white_line {
-  border-bottom: solid 0px white;
-  max-width: 700px;
-  margin: auto;
-}
-
-.black_line {
-  border-bottom: solid 0px #171717;
-  max-width: 700px;
-  margin: auto;
-}
-
 .description, .legal_text, .footer__box {
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .box_header {
-  max-width: 1400px;
+  max-width: 1150px;
+}
+
+.liste_raisons {
+  max-width: 1200px;
 }
 
 a {
@@ -45,7 +37,7 @@ a {
 h1 {
   margin: 0;
   margin-bottom: 10px;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 h2 {
@@ -66,7 +58,7 @@ strong {
 }
 
 p {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -83,12 +75,15 @@ p {
 }
 header {
   padding: 15px 25px 15px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .box_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
+  width: 100%;
 }
 header .box_header figure {
   width: 60px;
@@ -117,23 +112,15 @@ header .box_header nav a:hover {
   header {
     padding: 25px 55px;
   }
+  header .box_header {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   header .box_header figure {
     width: 80px;
   }
   header .box_header nav a {
     font-size: 18px;
-  }
-  .white_line {
-    border-bottom: solid 0.7px white;
-    width: 90%;
-    max-width: 700px;
-    margin: auto;
-  }
-  .black_line {
-    border-bottom: solid 0.7px #171717;
-    width: 90%;
-    max-width: 700px;
-    margin: auto;
   }
 }
 .banner {
@@ -171,20 +158,20 @@ header .box_header nav a:hover {
 }
 
 .liste_raisons {
-  max-width: 700px;
-  margin: auto;
   padding: 0px 20px;
+  margin: auto;
 }
 .liste_raisons h1 {
   margin-top: 20px;
   font-weight: 900;
   color: white;
   margin-bottom: 0;
+  line-height: 35px;
 }
 .liste_raisons h2 {
-  margin-top: 0;
-  font-size: 18px;
-  font-weight: 900;
+  margin-top: 8px;
+  font-size: 17px;
+  font-weight: 700;
   color: #DA0073;
 }
 .liste_raisons .box_raisons {
@@ -198,13 +185,14 @@ header .box_header nav a:hover {
   flex-direction: row;
 }
 .liste_raisons .box_raisons .raison figure img {
-  width: 25px;
+  width: 15px;
 }
 .liste_raisons .box_raisons .raison p {
   margin: 0;
-  padding-top: 12.5px;
+  padding-top: 7.5px;
   margin-left: 20px;
   color: white;
+  font-size: 15px;
 }
 
 .description {
@@ -224,7 +212,7 @@ header .box_header nav a:hover {
 }
 .description__box {
   display: flex;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 .description__box .top_fleche_bas {
   width: 30px;
@@ -233,10 +221,14 @@ header .box_header nav a:hover {
   width: 100%;
   object-fit: cover;
 }
+.description__box__challenge {
+  margin: 15px 10px;
+}
 .description__box__challenge h3 {
-  font-size: 30px;
+  font-size: 38px;
   -webkit-text-stroke: 0.4px white;
   color: transparent;
+  line-height: 38px;
 }
 .description__box__challenge .white {
   color: white;
@@ -252,7 +244,7 @@ header .box_header nav a:hover {
   object-fit: cover;
 }
 .description .question {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
 }
 .description .double_fleche {
@@ -264,10 +256,11 @@ header .box_header nav a:hover {
 }
 .description a {
   margin-top: 30px;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 700;
-  background-color: transparent;
-  padding: 9px 18px;
+  background-color: #171717;
+  padding: 8px 18px;
   border-radius: 100px;
   color: white;
   border: solid 1.5px white;
@@ -276,31 +269,8 @@ header .box_header nav a:hover {
 .description a:hover {
   background-color: white;
   color: #171717;
+  border-color: #DA0073;
   transition-duration: 0.5s;
-  border: solid 1.5px #DA0073;
-}
-@media (min-width: 700px) {
-  .description .question {
-    font-size: 30px;
-  }
-  .description h1 {
-    font-size: 60px;
-  }
-  .description p {
-    font-size: 20px;
-  }
-  .description .description__box .description__box__challenge h3 {
-    font-size: 92px;
-  }
-  .description .double_fleche {
-    margin-top: 20px;
-    width: 37px;
-    height: 44px;
-  }
-}
-.description figure {
-  width: 427px;
-  height: 64px;
 }
 
 .legal_text {
@@ -347,24 +317,63 @@ header .box_header nav a:hover {
     position: relative;
     top: 42px;
   }
+  .description h1 {
+    font-size: 100px;
+    margin: 65px 0;
+  }
+  .description p {
+    font-size: 25px;
+  }
   .description .question {
-    font-size: 18px;
+    font-size: 32px;
+  }
+  .description .double_fleche {
+    margin-top: 20px;
+    width: 20px;
+  }
+  .description__box {
+    margin: 200px auto 80px auto;
   }
   .description__box .top_fleche_bas,
   .description__box .bottom_fleche_bas {
-    width: 40px;
+    width: 100px;
   }
   .description__box__challenge h3 {
-    font-size: 43px;
+    font-size: 90px;
+    line-height: 82px;
+  }
+  .description a {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 9px 40px;
+  }
+  .liste_raisons {
+    padding: 25px 55px;
   }
   .liste_raisons h1 {
-    margin-top: 50px;
+    margin-top: 40px;
+    font-size: 75px;
+    line-height: 65px;
   }
   .liste_raisons h2 {
-    font-size: 22px;
+    font-size: 40px;
   }
   .liste_raisons .box_raisons {
-    height: 420px;
+    margin-top: 65px;
+    height: 480px;
+    max-width: 800px;
+  }
+  .liste_raisons .box_raisons .raison figure img {
+    width: 22px;
+  }
+  .liste_raisons .box_raisons .raison p {
+    padding-top: 0px;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-left: 70px;
   }
 }
 footer {
@@ -408,6 +417,9 @@ footer .footer__box__droit p a {
 }
 
 @media (min-width: 700px) {
+  footer .footer__box {
+    padding: 45px;
+  }
   footer .footer__box__info p {
     font-size: 14px;
   }

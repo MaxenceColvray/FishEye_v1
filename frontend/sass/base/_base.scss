@@ -13,23 +13,14 @@ body {
 .color_white{
   color: white;
 }
-.white_line{
-  border-bottom: solid 0px white;
-  max-width: 700px;
-  margin: auto;
-}
-.black_line{
-  border-bottom: solid 0px $font-light-black;
-  max-width: 700px;
-  margin: auto;
-}
-
-
 .description, .legal_text, .footer__box {
-  max-width: 700px;
+  max-width: 900px;
 }
 .box_header{
-  max-width: 1400px;
+  max-width: 1150px;
+}
+.liste_raisons{
+  max-width: 1200px;
 }
 
 a {
@@ -40,7 +31,7 @@ a {
 h1 {
   margin: 0;
   margin-bottom: 10px;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 h2 {
@@ -59,7 +50,7 @@ strong {
   color: $font-distinct;
 }
 p {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: $font-light;
 }
 
