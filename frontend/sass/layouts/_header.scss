@@ -1,4 +1,6 @@
 header {
+  position: sticky;
+  top: 0;
   padding: 15px 25px 15px 25px;
   display: flex;
   justify-content: center;
@@ -48,7 +50,6 @@ header {
       figure {
         width: 80px;
       }
-
       nav {
         a {
           font-size: 18px;
