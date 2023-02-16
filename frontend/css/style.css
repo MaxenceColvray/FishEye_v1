@@ -17,6 +17,10 @@ body {
   background-color: #0F0F0F;
 }
 
+.white_header {
+  background-color: white;
+}
+
 .color_white {
   color: white;
 }
