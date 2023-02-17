@@ -39,21 +39,21 @@
 }
 
 .liste_raisons {
-  max-width: 700px;
-  margin: auto;
   padding: 0px 20px;
+  margin: auto;
 
   h1 {
     margin-top: 20px;
     font-weight: $font-extra-bold;
     color: white;
     margin-bottom: 0;
+    line-height: 35px;
   }
 
   h2 {
-    margin-top: 0;
-    font-size: 18px;
-    font-weight: $font-extra-bold;
+    margin-top: 8px;
+    font-size: 17px;
+    font-weight: $font-bold;
     color: $font-distinct;
   }
 
@@ -69,15 +69,16 @@
 
       figure {
         img {
-          width: 25px;
+          width: 15px;
         }
       }
 
       p {
         margin: 0;
-        padding-top: 12.5px;
+        padding-top: 7.5px;
         margin-left: 20px;
         color: white;
+        font-size: 15px;
       }
     }
   }
@@ -102,7 +103,7 @@
 
   &__box {
     display: flex;
-    margin: 20px auto;
+    margin: 40px auto;
 
     .top_fleche_bas {
       width: 30px;
@@ -114,10 +115,13 @@
     }
 
     &__challenge {
+      margin: 15px 10px;
+
       h3 {
-        font-size: 30px;
+        font-size: 38px;
         -webkit-text-stroke: 0.4px white;
         color: transparent;
+        line-height: 38px;
       }
 
       .white {
@@ -139,7 +143,7 @@
   }
 
   .question {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: $font-medium;
   }
 
@@ -154,10 +158,11 @@
 
   a {
     margin-top: 30px;
+    margin-bottom: 10px;
     font-size: 16px;
     font-weight: $font-bold;
-    background-color: transparent;
-    padding: 9px 18px;
+    background-color: $font-light-black;
+    padding: 8px 18px;
     border-radius: 100px;
     color: $font-white;
     border: solid 1.5px $font-white;
@@ -167,45 +172,8 @@
   a:hover {
     background-color: white;
     color: $font-light-black;
+    border-color: $font-distinct;
     transition-duration: 0.5s;
-    border: solid 1.5px $font-distinct;
-  }
-
-  @media (min-width: 700px) {
-    .question {
-      font-size: 30px;
-    }
-
-    h1 {
-      font-size: 60px;
-    }
-
-
-
-    p {
-      font-size: 20px;
-    }
-
-
-
-    .description__box {
-      .description__box__challenge {
-        h3 {
-          font-size: 92px;
-        }
-      }
-    }
-
-    .double_fleche {
-      margin-top: 20px;
-      width: 37px;
-      height: 44px;
-    }
-  }
-
-  figure {
-    width: 427px;
-    height: 64px;
   }
 }
 
@@ -240,16 +208,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 700px) {
   .banner {
     height: 600px;
@@ -272,26 +230,51 @@
   }
 
   .description {
+    h1 {
+      font-size: 100px;
+      margin: 65px 0;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
     .question {
-      font-size: 18px;
+      font-size: 32px;
+    }
+
+    .double_fleche {
+      margin-top: 20px;
+      width: 20px;
     }
 
     &__box {
+      margin: 200px auto 80px auto;
 
       .top_fleche_bas,
       .bottom_fleche_bas {
-        width: 40px;
+        width: 100px;
       }
 
       &__challenge {
         h3 {
-          font-size: 43px;
+          font-size: 90px;
+          line-height: 82px;
         }
       }
+    }
+
+    a {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      font-size: 18px;
+      font-weight: $font-bold;
+      padding: 9px 40px;
     }
   }
 
   .liste_raisons {
+
     h1 {
       margin-top: 50px;
     }
@@ -302,7 +285,7 @@
 
     .box_raisons {
       height: 420px;
-    }
 
+    }
   }
 }

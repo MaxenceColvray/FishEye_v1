@@ -1,12 +1,15 @@
 header {
+  position: sticky;
+  top: 0;
   padding: 15px 25px 15px 25px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .box_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-
+    width: 100%;
     figure {
       width: 60px;
       a {
@@ -42,29 +45,16 @@ header {
   header {
     padding: 25px 55px;
     .box_header {
+      margin-left: 50px;
+      margin-right: 50px;
       figure {
         width: 80px;
       }
-
       nav {
         a {
           font-size: 18px;
         }
       }
     }
-  }
-
-  .white_line {
-    border-bottom: solid 0.7px white;
-    width: 90%;
-    max-width: 700px;
-    margin: auto;
-  }
-
-  .black_line {
-    border-bottom: solid 0.7px $font-light-black;
-    width: 90%;
-    max-width: 700px;
-    margin: auto;
   }
 }
