@@ -14,10 +14,12 @@ body {
 }
 
 .black_header {
+  z-index: 99;
   background-color: #0F0F0F;
 }
 
 .white_header {
+  z-index: 99;
   background-color: white;
 }
 
