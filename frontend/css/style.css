@@ -312,6 +312,53 @@ header .box_header nav a:hover {
   line-height: 20px;
 }
 
+.formulaire {
+  margin: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.formulaire .telechargement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.formulaire .telechargement a {
+  margin: 10px;
+  text-decoration: underline;
+}
+.formulaire .telechargement a:active,
+.formulaire .telechargement a:hover {
+  color: #DA0073;
+  background-color: transparent;
+  text-decoration: underline #DA0073;
+}
+.formulaire .ou {
+  margin: 12px;
+}
+.formulaire .contactez_nous {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #DA0073;
+  padding: 8px 18px;
+  border-radius: 100px;
+  color: white;
+  margin-bottom: 10px;
+  border: solid 2px #DA0073;
+}
+.formulaire a:active,
+.formulaire a:hover {
+  background-color: white;
+  color: #171717;
+  border-color: #DA0073;
+  transition-duration: 0.5s;
+}
+
 @media (min-width: 700px) {
   .banner {
     height: 600px;
@@ -386,6 +433,16 @@ header .box_header nav a:hover {
     font-weight: 500;
     line-height: 35px;
     margin-left: 70px;
+  }
+  .formulaire {
+    font-size: 30px;
+  }
+  .formulaire .ou {
+    font-size: 25px;
+    margin: 25px;
+  }
+  .formulaire .contactez_nous {
+    font-size: 20px;
   }
 }
 footer {

@@ -19,15 +19,18 @@
   .logo_principal {
     width: 100%;
     max-width: 600px;
+
     img {
       width: 100%;
       height: 100%;
     }
   }
+
   .fleche {
     width: 45px;
     position: relative;
     top: 25px;
+
     img {
       width: 100%;
       height: 100%;
@@ -38,6 +41,7 @@
 .liste_raisons {
   padding: 0px 20px;
   margin: auto;
+
   h1 {
     margin-top: 20px;
     font-weight: $font-extra-bold;
@@ -100,25 +104,31 @@
   &__box {
     display: flex;
     margin: 40px auto;
+
     .top_fleche_bas {
       width: 30px;
+
       img {
         width: 100%;
         object-fit: cover;
       }
     }
+
     &__challenge {
       margin: 15px 10px;
+
       h3 {
         font-size: 38px;
         -webkit-text-stroke: 0.4px white;
         color: transparent;
         line-height: 38px;
       }
+
       .white {
         color: $font-white;
       }
     }
+
     .bottom_fleche_bas {
       width: 30px;
       display: flex;
@@ -145,6 +155,8 @@
       width: 100%;
     }
   }
+
+
   a {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -156,6 +168,7 @@
     color: $font-white;
     border: solid 1.5px $font-white;
   }
+
   a:active,
   a:hover {
     background-color: white;
@@ -164,10 +177,12 @@
     transition-duration: 0.5s;
   }
 }
+
 .legal_text {
   margin: auto;
   padding: 20px;
   color: #171717;
+
   h1 {
     font-weight: $font-extra-bold;
     line-height: 40px;
@@ -194,6 +209,60 @@
   }
 }
 
+
+
+.formulaire {
+  margin: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 50px;
+
+  .telechargement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      margin: 10px;
+      text-decoration: underline;
+    }
+    a:active,
+    a:hover {
+      color: $font-distinct;
+      background-color: transparent;
+      text-decoration: underline $font-distinct;
+    }
+  }
+
+  .ou{
+    margin: 12px;
+  }
+
+  .contactez_nous {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $font-distinct;
+    padding: 8px 18px;
+    border-radius: 100px;
+    color: white;
+    margin-bottom: 10px;
+    border: solid 2px $font-distinct;
+  }
+  a:active,
+  a:hover {
+    background-color: white;
+    color: $font-light-black;
+    border-color: $font-distinct;
+    transition-duration: 0.5s;
+  }
+
+}
+
+
 @media (min-width: 700px) {
   .banner {
     height: 600px;
@@ -203,9 +272,11 @@
       font-size: 40px;
       margin-bottom: 0;
     }
+
     .logo_principal {
       max-width: 700px;
     }
+
     .fleche {
       width: 85px;
       position: relative;
@@ -218,18 +289,23 @@
       font-size: 100px;
       margin: 65px 0;
     }
+
     p {
       font-size: 25px;
     }
+
     .question {
       font-size: 32px;
     }
+
     .double_fleche {
       margin-top: 20px;
       width: 20px;
     }
+
     &__box {
       margin: 200px auto 80px auto;
+
       .top_fleche_bas,
       .bottom_fleche_bas {
         width: 100px;
@@ -242,6 +318,7 @@
         }
       }
     }
+
     a {
       margin-top: 30px;
       margin-bottom: 50px;
@@ -253,24 +330,29 @@
 
   .liste_raisons {
     padding: 25px 55px;
+
     h1 {
       margin-top: 40px;
       font-size: 75px;
       line-height: 65px;
     }
+
     h2 {
       font-size: 40px;
     }
+
     .box_raisons {
       margin-top: 65px;
       height: 480px;
       max-width: 800px;
+
       .raison {
         figure {
           img {
             width: 22px;
           }
         }
+
         p {
           padding-top: 0px;
           font-size: 23px;
@@ -281,4 +363,16 @@
       }
     }
   }
+  .formulaire {
+    font-size: 30px;
+    .ou{
+      font-size: 25px;
+      margin: 25px;
+    }
+    .contactez_nous {
+      font-size: 20px;
+    }
+  
+  }
+  
 }
